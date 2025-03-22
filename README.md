@@ -1,4 +1,4 @@
-# URL Shortener - Local Setup Guide
+# ShortUR (pronounced as short-er) - Local Setup Guide
 
 ## 📌 Prerequisites
 Before running the project, ensure you have the following installed:
