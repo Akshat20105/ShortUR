@@ -1,24 +1,46 @@
-@import "tailwindcss";
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* 🔹 Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
+/* 🔹 Background & Root Container */
+body {
+  background: linear-gradient(135deg, #667eea, #764ba2); /* Beautiful Gradient */
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 🔹 Main Content Box */
+#root {
+  max-width: 1280px;
+  width: 90%;
+  padding: 2rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1); /* Glassmorphism Effect */
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px); /* Frosted Glass Effect */
+}
+
+/* 🔹 Logo Effects */
 .logo {
   height: 6em;
   padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  transition: filter 300ms ease-in-out, transform 0.3s ease-in-out;
 }
 
+.logo:hover {
+  filter: drop-shadow(0 0 2em rgba(255, 255, 255, 0.6));
+  transform: scale(1.1); /* Slight Zoom on Hover */
+}
+
+/* 🔹 Animated Rotating Logo */
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -34,10 +56,41 @@
   }
 }
 
+/* 🔹 Stylish Cards */
 .card {
-  padding: 2em;
+  padding: 3em;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out;
 }
 
+.card:hover {
+  transform: translateY(-5px); /* Lifting Effect */
+}
+
+/* 🔹 Aesthetic Buttons */
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  background: linear-gradient(45deg, #ff758c, #ff7eb3);
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 5px 15px rgba(255, 118, 136, 0.3);
+}
+
+.button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 20px rgba(255, 118, 136, 0.5);
+}
+
+/* 🔹 Footer & Extra Info */
 .read-the-docs {
-  color: #888;
+  color: #ddd;
+  font-size: 14px;
+  margin-top: 20px;
 }
