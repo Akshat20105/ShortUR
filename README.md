@@ -71,6 +71,3 @@ npm run dev
    - Open `http://localhost:5173` and try shortening a URL.
 
 ---
-
-## 🚀 Done! Your URL Shortener is Now Running Locally! 🎉
-Let me know if you need further assistance! 😊
