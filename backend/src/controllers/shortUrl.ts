@@ -5,8 +5,10 @@ export const createURL = async (req: express.Request, res: express.Response) => 
         const {fullUrl} = req.body;
         const urlFound=await urlModel.find({fullUrl});
         if(urlFound.length>0){
+            alert("URL Already Exists");
             res.status(409);
             res.send(urlFound);
+            
         }else{
             const shorturl = await urlModel.create({fullUrl});
             res.status(201).send(shorturl);
@@ -18,7 +20,7 @@ export const createURL = async (req: express.Request, res: express.Response) => 
 };
 export const getURL = async (req: express.Request, res: express.Response) => {
 try {
-    const shorturls=await urlModel.find();
+    const shorturls=await urlModel.find().sort({createdAt:-1});
     if(shorturls.length>0){
         res.status(200).send(shorturls);
     }
