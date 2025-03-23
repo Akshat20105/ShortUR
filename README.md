@@ -44,9 +44,9 @@ cd ../frontend
 npm install
 ```
 ### 🔹 Update API URL in Frontend
-Edit `src/Helpers/Constant.ts` and set the local backend URL:
+Edit `src/.env` and set the local backend URL:
 ```
-export const serverUrl = "http://localhost:5000"; 
+VITE_SERVER_URL:http://localhost:5000/api; 
 ```
 ### 🔹 Start the Frontend Server
 ```
@@ -56,18 +56,7 @@ npm run dev
 
 ---
 
-## 🎯 Testing the Local Setup
-1. Open **Postman** or your browser.
-2. **Backend Health Check**:
-   - Visit `http://localhost:5000/api/health` → Should return `{ status: "OK" }`
-3. **Shorten a URL**:
-   - Use Postman to send a `POST` request to `http://localhost:5000/api/shorturl` with:
-   ```
-   {
-     "fullUrl": "https://example.com"
-   }
-   ```
-4. **Verify in the Frontend**:
+### 4. **Verify in the Frontend**:
    - Open `http://localhost:5173` and try shortening a URL.
 
 ---
