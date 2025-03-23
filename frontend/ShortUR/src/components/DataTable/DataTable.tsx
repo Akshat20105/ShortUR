@@ -23,7 +23,7 @@ const DataTable: React.FunctionComponent<IDataTableProps> = (props) => {
     const renderTableData = () => {
         return data.map((item) => {
             return (
-                <tr key={String(item._id)} className='text-sm border-b border-amber-50 bg-blue-100 text-blue-600 hover:bg-blue-500 hover:text-white'>
+                <tr key={String(item._id)} className='text-sm border border-amber-50 bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white'>
                     <td className='px-6 py-4 break-words text-wrap'>
                         <Link to={`${item.fullUrl}`} target="_blank" rel="noreferrer noopener">{item.fullUrl}</Link>
                     </td>
@@ -39,14 +39,14 @@ const DataTable: React.FunctionComponent<IDataTableProps> = (props) => {
     }
   return (
     <div className='container mx-auto pt-2 pb-10'>
-        <div className='relative overflow-x-auto shadow-sm sm:rounded-lg'>
+        <div className='relative overflow-x-auto shadow-sm sm:rounded-2xl'>
             <table className='w-full table-fixed text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 rounded-2xl'>
-                <thead className='text-md uppercase bg-blue-200'>
+                <thead className='text-md uppercase bg-blue-700'>
                     <tr>
-                        <th scope='col' className='px-6 py-3 w-6/12 text-red-700'>full Url</th>
-                        <th scope='col' className='px-6 py-3 w-3/12 text-red-700'>short Url</th>
-                        <th scope='col' className='px-6 py-3  text-red-700'>Clicks</th>
-                        <th scope='col' className='px-6 py-3  text-red-700'>Action</th>
+                        <th scope='col' className='px-6 py-3 w-6/12 text-white'>full Url</th>
+                        <th scope='col' className='px-6 py-3 w-3/12  text-white'>short Url</th>
+                        <th scope='col' className='px-6 py-3   text-white'>Clicks</th>
+                        <th scope='col' className='px-6 py-3   text-white'>Action</th>
                     </tr>
                 </thead>
                 <tbody>{renderTableData()}</tbody>

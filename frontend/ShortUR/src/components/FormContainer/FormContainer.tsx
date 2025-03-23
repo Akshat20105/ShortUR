@@ -1,6 +1,7 @@
 import * as React from "react";
 import axios from "axios";
 import { serverUrl } from "../../Helpers/Constant";
+import bgimage from "../../assets/bg.jpg";
 
 interface IFormContainerProps {
   updateReloadState: () => void;
@@ -30,13 +31,17 @@ const FormContainer: React.FunctionComponent<IFormContainerProps> = ({ updateRel
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-blue-200 p-4 sm:rounded-2xl">
-      <div className="bg-white shadow-lg rounded-2xl p-8 w-full max-w-lg">
+    <div className="flex justify-center items-center h-100 bg-blue-200 p-4 sm:rounded-b-2xl">
+      <div className="bg-whitw shadow-lg shadow-blue-500 rounded-2xl p-10 w-200 " style={{ 
+      backgroundImage: `url(${bgimage})`, 
+      backgroundSize: "cover", 
+      backgroundPosition: "center",
+    }}>
         {/* Header */}
-        <h2 className="text-3xl font-semibold text-gray-800 text-center mb-2">
+        <h2 className="text-3xl font-semibold text-white text-center mb-2">
           🔗 Shorten Your URL
         </h2>
-        <p className="text-gray-500 text-center mb-6">
+        <p className="text-white text-center mb-6">
           Paste your link below and get a short, easy-to-share URL.
         </p>
 
@@ -57,7 +62,7 @@ const FormContainer: React.FunctionComponent<IFormContainerProps> = ({ updateRel
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full bg-green-500 text-white font-medium py-3 rounded-2xl hover:bg-green-700 transition-all duration-200 shadow-md"
+            className="w-75 bg-emerald-500 shadow-emerald-700 text-white font-medium py-3 rounded-2xl hover:bg-emerald-600 transition-all duration-100 shadow-md"
           >
             Submit
           </button>

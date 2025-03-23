@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa"; // Import React Icons
 
 const Footer: React.FunctionComponent = () => {
   return (
-    <footer className="bg-blue-800 text-white text-sm text-center py-4 sm:rounded-b-2xl">
+    <footer className="bg-blue-700 text-white text-sm text-center py-4 sm:rounded-b-2xl">
       <p className="mb-2">&copy; {new Date().getFullYear()} ShortUR | Built by Akshat</p>
 
       {/* Social Media Icons */}

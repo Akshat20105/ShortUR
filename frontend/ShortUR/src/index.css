@@ -2,19 +2,24 @@
 
 /* Custom Global Styles */
 body {
-  background-color: #f4f4f4;
-  color: #333;
-  text-align: center;
-  padding: 20px;
+  background-color: #c0d5ea;
+  color: #ff0000;
+  text-align: justify;
+  padding: 10px;
 }
 
 /* Main Container */
 #root {
-  max-width: 1280px;
+  max-width: 1560px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
   background: white;
   border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 10px rgb(0, 13, 255);
+  background-image: url("frontend\ShortUR\src\assets\bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
 }
