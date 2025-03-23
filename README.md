@@ -1,4 +1,4 @@
-# URL Shortener - Local Setup Guide
+# ShortUR (pronounced as short-er) - Local Setup Guide
 
 ## 📌 Prerequisites
 Before running the project, ensure you have the following installed:
@@ -11,8 +11,8 @@ Before running the project, ensure you have the following installed:
 
 ## 1️⃣ Clone the Repository
 ```
-git clone https://github.com/Akshat20105/ShortUR.git
-cd ShortUR
+git clone https://github.com/your-username/url-shortener.git
+cd url-shortener
 ```
 
 ---
