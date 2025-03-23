@@ -9,7 +9,7 @@ Before running the project, ensure you have the following installed:
 
 ---
 
-## 1️⃣ Clone the Repository
+## 1. Clone the Repository
 ```
 git clone https://github.com/Akshat20105/ShortUR.git
 cd ShortUR
@@ -17,7 +17,7 @@ cd ShortUR
 
 ---
 
-## 2️⃣ Setup Backend
+## 2. Setup Backend
 ### 🔹 Navigate to the Backend Folder & Install Dependencies
 ```
 cd backend
@@ -26,18 +26,18 @@ npm install
 ### 🔹 Create a `.env` File for Environment Variables
 Inside the `backend/` folder, create a `.env` file and add:
 ```
-MONGO_URI=mongodb://localhost:27017/urlshortener  # Change this if using MongoDB Atlas
+MONGO_URI=mongodb://localhost:27017/<urlshortenerdb>  # Change this if using MongoDB Atlas
 PORT=5000
 ```
 ### 🔹 Start the Backend Server
 ```
 npm run dev  # Uses Nodemon for live reload
 ```
-✅ The backend should now be running at **`http://localhost:5000`**.
+The backend should now be running at **`http://localhost:5000`**.
 
 ---
 
-## 3️⃣ Setup Frontend
+## 3. Setup Frontend
 ### 🔹 Navigate to the Frontend Folder & Install Dependencies
 ```
 cd ../frontend
@@ -52,7 +52,7 @@ VITE_SERVER_URL:http://localhost:5000/api;
 ```
 npm run dev
 ```
-✅ The frontend should now be running at **`http://localhost:5173`** (or another port).
+The frontend should now be running at **`http://localhost:5173`** (or another port).
 
 ---
 
